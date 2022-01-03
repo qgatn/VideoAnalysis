@@ -46,26 +46,7 @@ def create_model():
                             padding='same', name='conv3b',
                             strides=(1, 1, 1)))
     model.add(MaxPooling3D(pool_size=(2, 2, 2), strides=(2, 2, 2),
-                           padding='valid', name='pool3'))
-    # # 4th layer group
-    # model.add(Convolution3D(512, (3, 3, 3), activation='relu',
-    #                         padding='same', name='conv4a',
-    #                         strides=(1, 1, 1)))
-    # model.add(Convolution3D(512, (3, 3, 3), activation='relu',
-    #                         padding='same', name='conv4b',
-    #                         strides=(1, 1, 1)))
-    # model.add(MaxPooling3D(pool_size=(2, 2, 2), strides=(2, 2, 2),
-    #                        padding='valid', name='pool4'))
-    # # 5th layer group
-    # model.add(Convolution3D(512, (3, 3, 3), activation='relu',
-    #                         padding='same', name='conv5a',
-    #                         strides=(1, 1, 1)))
-    # model.add(Convolution3D(512, (3, 3, 3), activation='relu',
-    #                         padding='same', name='conv5b',
-    #                         strides=(1, 1, 1)))
-    # model.add(ZeroPadding3D(padding=(0, 1, 1)))
-    # model.add(MaxPooling3D(pool_size=(2, 2, 2), strides=(2, 2, 2),
-    #                        padding='valid', name='pool5'))
+                           padding='valid', name='pool3'))   
 
     model.add(Flatten())
 
